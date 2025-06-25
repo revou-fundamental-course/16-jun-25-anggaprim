@@ -1,0 +1,111 @@
+/*Layout utama*/
+body{
+    margin: 0;padding: 0;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, main, footer{
+    display: flex;flex-direction: column;
+    align-items: center;justify-content: center;
+}
+header,footer{
+    width: 100%;margin: 0;padding: 0;
+    background-color: midnightblue;
+}
+header{
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+main{
+    flex: 1;
+    justify-content: start;
+}
+header h1,footer div{
+    text-align: center;color: aliceblue;
+}
+
+/*TABS*/
+.tab-container {
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.tab-header {
+    display: flex;
+    position: relative;
+}
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: #3b82f6;
+    border-radius: 2px 2px 0 0;
+    transition: all 0.3s ease;
+}
+.tab-btn {
+    flex: 1;
+    padding: 15px 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b7280;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+.tab-btn.active {
+    color: #3b82f6;
+}
+.tab-content {
+    padding: 30px;
+}
+.tab-panel {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+.tab-panel.active {
+    display: block;
+}
+.tab-panel h2 {
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+.tab-panel p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*konten dalam tabs*/
+.panel-content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+.form h2,.hasil p,.hasil h3{
+    text-align: center;
+}
+.hasil{
+    border-left:#1f2937 solid 2px;
+    padding-left: 5px;
+}
+.panel-content button{
+    height: 50px;
+}

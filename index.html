@@ -4,26 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
     <title>Bangun 2D SEGI TIGA</title>
 </head>
 <body>
-    <header><h1>Luas dan Keliling SEGI TIGA</h1></header>
-    <nav></nav>
-    <h2>Luas Segitiga</h2>
-    <form action="#hasilLuas">
-        panjang alas segi tiga:
-        tinggi segi tiga:
-        <button>Hitung</button>
-    </form>
-    hasil: 1/2 alas * tinggi 
-    <h2>Keliling Segitiga</h2>
-    <form action="#hasilKeliling">
-        sisi a segi tiga:
-        sisi b segi tiga:
-        sisi c segi tiga:
-        <button>Hitung</button>
-    </form>
-    hasil: a+b+c
+    <header>
+        <h1>Bangun Dua Dimensi<br>SEGI TIGA</h1>
+    </header>
+    <main>
+        <div class="tab-container">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="1">LUAS</button>
+                <button class="tab-btn" data-tab="2">KELILING</button>
+                <div class="indicator" id="indicator"></div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-panel active" id="tab-1">
+                    <div class="panel-content">
+                        <div class="form">
+                            <h2>Luas Segitiga</h2>
+                            <form action="#hasilLuas">
+                                panjang alas segi tiga:<br>
+                                <input type="text" id="luas-alas"><br>
+                                tinggi segi tiga:<br>
+                                <input type="text" id="luas-tinggi"><br>
+                                <button>Hitung</button>
+                            </form>
+                        </div>
+                        <div class="hasil">
+                            <h3>HASIL</h3> 
+                            <p id="luas-hasil">0</p>
+                            <p>rumus: 1/2 alas * tinggi</p>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="tab-2">
+                    <h2>Keliling Segitiga</h2>
+                    <form action="#hasilKeliling">
+                        sisi a segi tiga:
+                        sisi b segi tiga:
+                        sisi c segi tiga:
+                        <button>Hitung</button>
+                    </form>
+                    hasil: a+b+c
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            SELAMAT BELAJAR
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
