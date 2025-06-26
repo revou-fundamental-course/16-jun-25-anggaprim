@@ -110,3 +110,20 @@ header h1,footer div{
 .panel-content button{
     height: 50px;
 }
+#keliling-hasil,#luas-hasil{
+    font-weight: bold;
+    font-size: larger;
+    display: inline-block;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+    40% { transform: translateX(-20px); }
+    60% { transform: translateX(-10px); }
+}
+@keyframes flash {
+    0%, 50%, 100% { background-color: #ffebee; }
+    25%, 75% { background-color: #ffcdd2; }
+}
+.animasiHasil{
+    animation: bounce 0.8s ease, flash 1.2s ease-out;
+}
