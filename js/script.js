@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnLuas = document.getElementById('luas-submit');
     const showLuas = document.getElementById('luas-hasil');
     btnLuas.addEventListener('click', function(e) {
+        e.preventDefault();
         const luasAlas=document.getElementById('luas-alas').value.trim();
         const luasTinggi=document.getElementById('luas-tinggi').value.trim();
         // console.log(luasAlas);console.log(luasTinggi);
