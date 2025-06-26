@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //BUTTONS
     const btnLuas = document.getElementById('luas-submit');
     const showLuas = document.getElementById('luas-hasil');
-    btnLuas.addEventListener('click', () => {
+    btnLuas.addEventListener('click', function(e) {
         const luasAlas=document.getElementById('luas-alas').value.trim();
         const luasTinggi=document.getElementById('luas-tinggi').value.trim();
         // console.log(luasAlas);console.log(luasTinggi);
@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     const btnKeliling = document.getElementById('keliling-submit');
     const showKeliling = document.getElementById('keliling-hasil');
-    btnKeliling.addEventListener('click', () => {
+    btnKeliling.addEventListener('click', function(e) {
+        e.preventDefault();
         const kelilingA=document.getElementById('keliling-a').value.trim();
         const kelilingB=document.getElementById('keliling-b').value.trim();
         const kelilingC=document.getElementById('keliling-c').value.trim();
