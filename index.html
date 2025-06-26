@@ -1,0 +1,75 @@
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bangun 2D SEGI TIGA</title>
+</head>
+<body>
+    <header>
+        <h1>Bangun Dua Dimensi<br>SEGI TIGA</h1>
+    </header>
+    <main>
+        <div class="tab-container">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="1">LUAS</button>
+                <button class="tab-btn" data-tab="2">KELILING</button>
+                <div class="indicator" id="indicator"></div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-panel active" id="tab-1">
+                    <div class="panel-content">
+                        <div class="form">
+                            <h2>Luas Segitiga</h2>
+                            <form action="#">
+                                panjang alas segi tiga:<br>
+                                <input type="text" id="luas-alas"><br>
+                                tinggi segi tiga:<br>
+                                <input type="text" id="luas-tinggi"><br>
+                                <button id="luas-submit">Hitung</button>
+                            </form>
+                        </div>
+                        <div class="hasil">
+                            <h3>HASIL</h3> 
+                            <p><span id="luas-hasil">0</span><span> cm<sup>2</sup></span></p>
+                            <p>rumus: 1/2 alas * tinggi</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-2">
+                    <div class="panel-content">
+                        <div class="form">
+                            <h2>Keliling Segitiga</h2>
+                            <form action="#">
+                                sisi a segi tiga:<br>
+                                <input type="text" id="keliling-a"><br>
+                                sisi b segi tiga:<br>
+                                <input type="text" id="keliling-b"><br>
+                                sisi c segi tiga:<br>
+                                <input type="text" id="keliling-c"><br>
+                                <button id="keliling-submit">Hitung</button>
+                            </form>
+                        </div>
+                        <div class="hasil">
+                            <h3>HASIL</h3> 
+                            <p><span id="keliling-hasil">0</span><span> cm</span></p>
+                            <p>rumus: a+b+c</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            SELAMAT BELAJAR
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+>>>>>>> 082857cfd7e463b7788b87a31ca242ab396d4787
