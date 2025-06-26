@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //TABS
     const tabs = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
     const indicator = document.getElementById('indicator');
-    
+
     updateIndicator(document.querySelector('.tab-btn.active'));
     function updateIndicator(activeTab) {
         const tabWidth = activeTab.offsetWidth;
@@ -25,5 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update indicator position
             updateIndicator(tab);
         });
+    });
+
+    //BUTTONS
+    const btnLuas = document.getElementById('luas-submit');
+    btnLuas.addEventListener('keydown', (event) => {
+        console.log('Input:', event.key);
+    });
+    const btnKeliling = document.getElementById('keliling-submit');
+    btnLuas.addEventListener('keydown', (event) => {
+        console.log('Input:', event.key);
     });
 });

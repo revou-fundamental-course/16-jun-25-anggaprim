@@ -28,7 +28,7 @@
                                 <input type="text" id="luas-alas"><br>
                                 tinggi segi tiga:<br>
                                 <input type="text" id="luas-tinggi"><br>
-                                <button>Hitung</button>
+                                <button id="luas-submit">Hitung</button>
                             </form>
                         </div>
                         <div class="hasil">
@@ -38,16 +38,26 @@
                         </div> 
                     </div>
                 </div>
-                
                 <div class="tab-panel" id="tab-2">
-                    <h2>Keliling Segitiga</h2>
-                    <form action="#hasilKeliling">
-                        sisi a segi tiga:
-                        sisi b segi tiga:
-                        sisi c segi tiga:
-                        <button>Hitung</button>
-                    </form>
-                    hasil: a+b+c
+                    <div class="panel-content">
+                        <div class="form">
+                            <h2>Keliling Segitiga</h2>
+                            <form action="#hasilLuas">
+                                sisi a segi tiga:<br>
+                                <input type="text" id="keliling-a"><br>
+                                sisi b segi tiga:<br>
+                                <input type="text" id="keliling-b"><br>
+                                sisi c segi tiga:<br>
+                                <input type="text" id="keliling-c"><br>
+                                <button id="keliling-submit">Hitung</button>
+                            </form>
+                        </div>
+                        <div class="hasil">
+                            <h3>HASIL</h3> 
+                            <p id="luas-hasil">0</p>
+                            <p>rumus: a+b+c</p>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
